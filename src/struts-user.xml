@@ -3,13 +3,6 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
-    <!--测试action-->
-    <package name="default" extends="struts-default" namespace="/test">
-        <action name="page">
-            <result >/index2.jsp</result>
-        </action>
-        <action name="register" class="com.sccc.blog.controller.TestController" method="execute"/>
-    </package>
     <package name="login/register" extends="json-default,struts-default">
         <action name="login" class="com.sccc.blog.controller.LoginAction">
             <result name="success" type="json">

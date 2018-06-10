@@ -16,6 +16,6 @@
     <!--最大上传大小 100M-->
     <constant name="struts.multipart.maxSize" value="1073741824"/>
 
-    <!--引入测试文件-->
-    <include file="struts-test.xml"/>
+    <!--引入user注册/登陆文件-->
+    <include file="struts-user.xml"/>
 </struts>
