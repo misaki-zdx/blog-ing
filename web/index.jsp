@@ -105,7 +105,7 @@
             <div><span>保尔柯察金</span>&nbsp;&nbsp;<span>1987.2.23</span></div>
         </div>
     </div>
-
+</div>
 
 
     <!-- SCRIPTS -->
