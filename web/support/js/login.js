@@ -77,7 +77,7 @@ function login() {
                        layer.msg('密码或者账号错误!');
                        break;
                    case 'success':
-                       window.location.href ='hello.jsp';
+                       window.location.href ='index.jsp';
                        break;
                    case 'login':
                        window.location.href ='hello.jsp';
