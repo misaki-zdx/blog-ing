@@ -80,7 +80,7 @@ function login() {
                        window.location.href ='index.jsp';
                        break;
                    case 'login':
-                       window.location.href ='hello.jsp';
+                       window.location.href ='index.jsp';
                        break;
                }
             },

@@ -18,5 +18,15 @@
                 </param>
             </result>
         </action>
+        <action name="logout" class="com.sccc.blog.controller.logoutAction">
+            <result>
+                /index.jsp
+            </result>
+        </action>
+        <action name="loading" class="com.sccc.blog.controller.LoadingAction">
+            <result>
+                /index.jsp
+            </result>
+        </action>
     </package>
 </struts>

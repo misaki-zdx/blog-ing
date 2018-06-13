@@ -55,7 +55,6 @@ public class UserDaoImp extends BaseDaoImp implements UserDao {
         if (list != null && list.size() == 1) {
             result = 1;
         }
-
         return result;
     }
 }

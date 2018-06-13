@@ -32,14 +32,16 @@ public class LoginAction extends ActionSupport implements ServletRequestAware {
 
     @Override
     public String execute() throws Exception {
-
-        int i = u.getUser(request.getParameter("name"), request.getParameter("password"));
+        String name = request.getParameter("name");
+        String password = request.getParameter("password");
+        int i = u.getUser(name, password);
         switch (i) {
             case 0:
                 state = ERROR;
                 break;
             case 1:
                 state = SUCCESS;
+                request.getSession().setAttribute("user",name);
                 break;
             case 2:
                 state = LOGIN;
