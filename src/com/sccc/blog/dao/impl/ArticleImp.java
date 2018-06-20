@@ -3,6 +3,7 @@ package com.sccc.blog.dao.impl;
 import com.sccc.blog.bean.po.BlogArticleEntity;
 import com.sccc.blog.dao.ArticleDao;
 import org.hibernate.query.Query;
+import org.springframework.beans.factory.BeanClassLoaderAware;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -20,6 +21,13 @@ public class ArticleImp extends BaseDaoImp implements ArticleDao {
         q.setFirstResult(i);
         q.setMaxResults(5);
         List<BlogArticleEntity> list = q.list();
+        destroy();
+        return list;
+    }
+
+    @Override
+    public List<BlogArticleEntity> searchTitle(String title) {
+        List<BlogArticleEntity> list = search("from BlogArticleEntity where id= '" + title + "'");
         return list;
     }
 }

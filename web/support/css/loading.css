@@ -1,0 +1,38 @@
+.context-all {
+    text-align: center;
+    margin-top: 85px;
+    background: #F2F2F5;
+}
+
+.context {
+    margin-left: 160px;
+    width: 800px;
+    height: 200px;
+    margin-top: 60px;
+    background: white;
+    margin-bottom: 20px;
+
+}
+
+.titles {
+    padding-top: 30px;
+}
+
+.hr_1 {
+    width: 600px;
+    border-top-width: 2px;
+    color: black;
+}
+
+.titles :hover {
+    font-size: 26px;
+
+}
+
+#sx {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+#sx a:hover{
+    font-size: 20px;
+}

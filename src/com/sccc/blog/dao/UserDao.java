@@ -12,10 +12,15 @@ import java.util.List;
 public interface UserDao {
     public void saveUser(String name, String password,String email);
 
-    public List<BlogUserEntity> getAll(Class clazz);
+    public void saveUser(String name, String password,String email,int type);
+    public void deleteUser(int id);
+    public void updateUser(String name, String password,String email,int type,int id);
+    public List<BlogUserEntity> getAll();
 
     public int getUser(String name, String password);
 
     public int getUser(String name);
+    public List getUser(int id);
+
 
 }

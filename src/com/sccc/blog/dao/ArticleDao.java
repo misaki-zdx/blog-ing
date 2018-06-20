@@ -1,6 +1,7 @@
 package com.sccc.blog.dao;
 
 import com.sccc.blog.bean.po.BlogArticleEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -10,4 +11,5 @@ import java.util.List;
  */
 public interface ArticleDao {
     public List<BlogArticleEntity> limit(int i);
+    public List<BlogArticleEntity> searchTitle(String title);
 }

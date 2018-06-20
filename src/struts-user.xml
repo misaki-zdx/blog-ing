@@ -24,8 +24,40 @@
             </result>
         </action>
         <action name="loading" class="com.sccc.blog.controller.LoadingAction">
+            <result type="json">
+                <param name="root">
+                    result
+                </param>
+            </result>
+        </action>
+        <action name="articleing" class="com.sccc.blog.controller.ArticleAction">
             <result>
-                /index.jsp
+                /article.jsp
+            </result>
+        </action>
+        <action name="getAllUser" class="com.sccc.blog.controller.getalluserAction">
+            <result>
+                /getAll.jsp
+            </result>
+        </action>
+        <action name="updateUser" class="com.sccc.blog.controller.updateUserAction">
+            <result>
+                /updateUser.jsp
+            </result>
+        </action>
+        <action name="deleteUser" class="com.sccc.blog.controller.DeleteUserAction">
+            <result type="redirect">
+                getAllUser.action
+            </result>
+        </action>
+        <action name="addUser" class="com.sccc.blog.controller.SaveUserAction">
+            <result type="redirect">
+                getAllUser.action
+            </result>
+        </action>
+        <action name="updateUser1" class="com.sccc.blog.controller.updateUser">
+            <result type="redirect">
+                getAllUser.action
             </result>
         </action>
     </package>

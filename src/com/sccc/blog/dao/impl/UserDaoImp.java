@@ -1,8 +1,10 @@
 package com.sccc.blog.dao.impl;
 
 
+import com.sccc.blog.bean.po.BlogArticleEntity;
 import com.sccc.blog.bean.po.BlogUserEntity;
 import com.sccc.blog.dao.UserDao;
+import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -28,8 +30,41 @@ public class UserDaoImp extends BaseDaoImp implements UserDao {
     }
 
     @Override
-    public List<BlogUserEntity> getAll(Class clazz) {
-        return null;
+    public void saveUser(String name, String password, String email, int type) {
+        init();
+        BlogUserEntity blogUserEntity = new BlogUserEntity();
+        blogUserEntity.setUserName(name);
+        blogUserEntity.setPassword(password);
+        blogUserEntity.setEmail(email);
+        blogUserEntity.setType(type);
+        session.save(blogUserEntity);
+        destroy();
+    }
+
+    @Override
+    public void deleteUser(int id) {
+        init();
+        BlogUserEntity blogUserEntity = session.get(BlogUserEntity.class,id);
+        session.delete(blogUserEntity);
+        destroy();
+    }
+
+    @Override
+    public void updateUser(String name, String password, String email, int type,int id) {
+        init();
+        BlogUserEntity b = session.get(BlogUserEntity.class,id);
+        b.setUserName(name);
+        b.setPassword(password);
+        b.setType(type);
+        b.setEmail(email);
+        session.update(b);
+        destroy();
+    }
+
+    @Override
+    public List<BlogUserEntity> getAll() {
+        List<BlogUserEntity> list =search("FROM BlogUserEntity");
+        return list;
     }
 
     @Override
@@ -56,5 +91,11 @@ public class UserDaoImp extends BaseDaoImp implements UserDao {
             result = 1;
         }
         return result;
+    }
+
+    @Override
+    public List getUser(int id) {
+        List list = super.search("FROM BlogUserEntity where id = '" + id + "'");
+        return list;
     }
 }

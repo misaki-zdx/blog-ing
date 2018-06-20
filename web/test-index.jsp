@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <%@include file="/WEB-INF/jsp/common/head.jsp" %>
+    <%@include file="/head.jsp" %>
     <title>登陆注册</title>
     <style type="text/css">
         .registerForm {

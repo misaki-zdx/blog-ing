@@ -14,11 +14,10 @@
 
 <body>
 this is test page
-<s:debug>
-    <s:iterator var="article" value="list1">
+    <s:iterator var="article" value="list">
         <s:property value="#article.title"/>
     </s:iterator>
-</s:debug>
 <s:property value="list[0].title"/>
+<s:debug></s:debug>
 </body>
 </html>

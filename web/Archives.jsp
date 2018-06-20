@@ -59,64 +59,7 @@
 
 <div class="context-all">
     <div class="container">
-        <div class="context">
-            <div class="titles">
-                <a href="articleing.action?id=" class="a_"><h3 class="title"></h3></a>
-            </div>
-            <hr class="hr_1"/>
-            <div><span class="author"></span>
-                &nbsp;&nbsp;
-                <span class="type"></span>
-            </div>
-        </div>
-
-        <div class="context">
-            <div class="titles">
-                <a href="articleing.action?id=" class="a_"><h3 class="title"></h3></a>
-            </div>
-            <hr class="hr_1"/>
-            <div><span class="author"></span>
-                &nbsp;&nbsp;
-                <span class="type"></span>
-            </div>
-        </div>
-
-        <div class="context">
-            <div class="titles">
-                <a href="#" class="a_"><h3 class="title"></h3></a>
-            </div>
-            <hr class="hr_1"/>
-            <div>
-                <span class="author"></span>
-                &nbsp;&nbsp;
-                <span class="type"></span>
-            </div>
-        </div>
-
-        <div class="context">
-            <div class="titles">
-                <a href="#" class="a_"><h3 class="title"></h3></a>
-            </div>
-            <hr class="hr_1"/>
-            <div>
-                <span class="author"></span>&nbsp;&nbsp;<span class="type"></span>
-            </div>
-        </div>
-
-        <div class="context">
-            <div class="titles">
-                <a href="#" class="a_"><h3 class="title"></h3></a>
-            </div>
-            <hr class="hr_1"/>
-            <div>
-                <span class="author"></span>&nbsp;&nbsp;<span class="type"></span>
-            </div>
-        </div>
-        <div id="sx">
-            <a href="#" id="s">上一页</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a id="x" href="#">下一页</a>
-        </div>
+            <img src="support/image/archive.jpg">
     </div>
 </div>
 
